@@ -115,7 +115,7 @@ void gameLoop(vector<Tile>& tiles,SDL_Texture* background, SDL_Renderer* rendere
         }
         moved = hasMoved;
         for (int i = 0; i < (int)tiles.size(); i++) {
-            if (tiles[i].value == 32) {
+            if (tiles[i].value == 2048) {
                 play(youWin);
                 running = false;
                 isWin = true;
