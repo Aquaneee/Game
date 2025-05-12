@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <vector>
+#include <windows.h>
 
 #include "graphics.h"
 
@@ -14,6 +15,10 @@ void clearEventQueue() {
     while (SDL_PollEvent(&e)) {
 
     }
+}
+
+int WINAPI WinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
+    return main(__argc, __argv);
 }
 
 int main(int argc, char *argv[]) {
